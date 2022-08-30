@@ -3,14 +3,14 @@ import chalk from 'chalk';
 
 import fun from 'everyday-fun';
 
-const guess = fun.getRandomQuote();
+const guess = fun.getRandomRiddle();
 
-console.log(guess.quote);
+console.log(guess.riddle);
 
 setTimeout(function() {
-    console.log(guess.author);
+    console.log(guess.answer);
 }, 5000);
 
-//console.log(chalk.blue.bgRed.bold('Hello world!'));
+console.log(chalk.blue.bgRed.bold('Hello world!'));
 
-//console.log(greet('shado'))
+console.log(greet('shado'))
