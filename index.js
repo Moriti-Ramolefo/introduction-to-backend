@@ -2,15 +2,21 @@ import greet from './greet.js';
 import chalk from 'chalk';
 
 import fun from 'everyday-fun';
+import figlet from 'figlet';
 
-const guess = fun.getRandomRiddle();
+figlet('...Riddler...', function (err, result) {
+    console.log(chalk.blue.bgBlackBright.bold(result));
 
-console.log(guess.riddle);
+    const guess = fun.getRandomRiddle();
 
-setTimeout(function() {
-    console.log(guess.answer);
-}, 5000);
+    console.log(chalk.bgGreen(guess.riddle));
 
-console.log(chalk.blue.bgRed.bold('Hello world!'));
+    setTimeout(function () {
+        console.log(chalk.blue.bgBlack.bold(guess.answer));
+    }, 5000);
 
-console.log(greet('shado'))
+});
+
+// console.log(chalk.blue.bgRed.bold('Hello world!'));
+
+// console.log(greet('shado'))

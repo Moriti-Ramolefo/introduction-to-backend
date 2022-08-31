@@ -22,17 +22,14 @@
     "email": "",
     "url": ""
   },
-  "contributors": [
-
-  ],
+  "contributors": [],
   "scripts": {
     "dev": "",
     "test": ""
   },
   "dependencies": {
-
-  },
-  "devDependencies": {
-
+    "chalk": "^5.0.1",
+    "everyday-fun": "^1.1.0",
+    "figlet": "^1.5.2"
   }
 }
